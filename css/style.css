@@ -21,13 +21,15 @@ body{
 }
 
 .boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 140px;
     height: 45px;
-    text-align: center;
     background-color: #8B48BF;
     background-clip: content-box;
     border-radius: 50px;
-    justify-content: left;
+    justify-content: center;
     color: white;
 }
 
@@ -71,6 +73,7 @@ body{
 }
 
 .Barra_parrafo{
+    font-weight: lighter;
     width: 450px;
     font-size: 16px;
 }
