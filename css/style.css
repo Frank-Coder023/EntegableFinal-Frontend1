@@ -1,7 +1,11 @@
+body{
+    font-family: 'Be Vietnam Pro';
+}
+
 .Header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -16,15 +20,36 @@
     padding: 2rem;
 }
 
+.boton{
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    background-color: #8B48BF;
+    background-clip: content-box;
+    border-radius: 50px;
+    justify-content: left;
+    color: white;
+}
+
 .intro{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 260px;
+    margin-bottom: 260px;
+    margin-left: 180px;
+    gap: 100px;
 }
 
 .Intro_texto{
     width: 450px;
+    text-align: right;
+}
+
+.Intro_titulo{
+    font-size: 50px;
+    color: #232C50;
 }
 
 .Barra{
@@ -32,10 +57,22 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 40px 0px;
+    height: 168px;
+    gap: 100px;
+    width: 100%;
+    background-color: #8B48BF;
+    color: white;
+}
+
+.Barra_texto{
+    width: 700x;
+    font-size: 36px;
 }
 
 .Barra_parrafo{
     width: 450px;
+    font-size: 16px;
 }
 
 .Grid{
@@ -44,5 +81,5 @@
 }
 
 .Grid_inferior{
-    grid-column: 2/2;
+    grid-column: span 2;
 }
