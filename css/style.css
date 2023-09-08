@@ -260,4 +260,10 @@ body{
     .Grid_texto{
         padding-left: 20px;
     }
+
+    .Grid_titulo{
+        background-color: white;
+        margin-left: 0px;
+        text-align: left;
+    }
 }
