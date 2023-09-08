@@ -5,47 +5,101 @@ body{
 .Header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
+    padding: 2rem;
+    gap: 200px;
+}
+
+.barras{
+    height: 60px;
+    width: 60px;
 }
 
 .Nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
+    display: none;
 }
 
-.links{
-    padding: 2rem;
+.boton_nav{
+    display: none;
 }
+
+
+
+
+@media (min-width: 1080px) {  /*Media Query Para el header*/
+
+    .Header{
+        justify-content: space-around;
+    }
+
+    .barras{
+        display: none;
+    }
+
+    .Nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    
+    .links{
+        padding: 0 2rem;
+    }
+
+    .links2{
+        text-decoration: none;
+    }
+    
+    .links2:hover{
+        color: #888888;
+    }
+    
+}
+
+
 
 .boton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 45px;
+    font-family: 'Be Vietnam Pro';
     background-color: #8B48BF;
-    background-clip: content-box;
-    border-radius: 50px;
-    justify-content: center;
     color: white;
+    font-size: 13px;
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+    border: none;
+}
+
+@media (min-width: 1080px) { /*Media Query Para los botones de contacto*/
+    .boton_nav{
+        display: block;
+    }
+}
+
+
+.boton:hover{
+    box-shadow: 2px 2px 5px #888888;
 }
 
 .intro{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 260px;
-    margin-bottom: 260px;
-    margin-left: 180px;
+    margin-top: 164px;
+    margin-bottom: 80px;
+    margin-left: 40px;
     gap: 100px;
+    width: 400px;
+}
+
+.padel{
+    width: 400px;
 }
 
 .Intro_texto{
-    width: 450px;
+    width: 400px;
     text-align: right;
 }
 
@@ -54,35 +108,137 @@ body{
     color: #232C50;
 }
 
+@media (min-width: 1080px) { /*Media Query introduccion*/
+    .intro{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 260px;
+        margin-bottom: 260px;
+        margin-left: 180px;
+        gap: 100px;
+        width: auto;
+    }
+
+    .padel{
+        width: auto;
+    }
+
+    .Intro_texto{
+        width: 450px;
+    }
+}
+
+
 .Barra{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0px;
-    height: 168px;
-    gap: 100px;
-    width: 100%;
-    background-color: #8B48BF;
+    padding: 40px 20px;
+    height: auto;
+    gap: 50px;
+    width: 480px;
+    background-color: #3CDDF3;
     color: white;
 }
 
 .Barra_texto{
-    width: 700x;
+    width: 440px;
     font-size: 36px;
 }
 
 .Barra_parrafo{
     font-weight: lighter;
-    width: 450px;
+    width: 440px;
     font-size: 16px;
 }
 
-.Grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 1080px) { /*Media Query Barra morada*/
+    .Barra{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0px;
+        height: 168px;
+        gap: 100px;
+        width: 100%;
+        background-color: #8B48BF;
+        color: white;
+    }
 }
 
-.Grid_inferior{
-    grid-column: span 2;
+.Grid{
+    display: flex;
+    flex-direction: column;
+    margin-left: 34px;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.Grid_contenido{
+    display: flex;
+    gap: 8px;
+}
+
+
+
+.boton_numero{
+    height: 69px;
+    width: 50px;
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro';
+    border-radius: 30px;
+    border: none;
+}
+
+.Grid_parrafo{
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+
+@media (min-width: 1080px) {
+    .Grid{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        width: 75%;
+    }
+    
+    .Grid_inferior{
+        grid-column: span 2;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .Grid_contenido{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .boton_numero{
+        background-color: #8B48BF;
+        color: white;
+        font-family: 'Be Vietnam Pro';
+        font-size: 16px;
+        height: 43px;
+        width: 69px;
+        border-radius: 50px;
+        border: none;
+        margin-top: -90px;
+    }
+    
+    .Grid_parrafo{
+        width: 437px;
+        color: #B3B2B7;
+    }
+    
+    .Grid_texto{
+        padding-left: 20px;
+    }
 }
