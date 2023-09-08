@@ -179,24 +179,37 @@ body{
 }
 
 .Grid_contenido{
-    display: flex;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: 69px auto;
+    justify-content: center;
+    align-items: center;
 }
 
-
+.Grid_parrafo{
+    grid-column: span 2;
+    color: rgba(179, 178, 183, 1);
+}
 
 .boton_numero{
-    height: 69px;
-    width: 50px;
+    height: 43px;
+    width: auto;
     font-size: 16px;
     font-family: 'Be Vietnam Pro';
     border-radius: 30px;
     border: none;
+    background-color: #8B48BF;
+    color: white;
+    padding: 10px 25px;
+    gap: 10px;
 }
 
-.Grid_parrafo{
-    margin-top: 20px;
+.Grid_titulo{
+    background-color: rgba(139, 72, 191, 0.3);
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(50, 56, 81, 1);
     margin-left: -50px;
+    text-align: center;
 }
 
 
@@ -211,14 +224,21 @@ body{
     
     .Grid_inferior{
         grid-column: span 2;
-        margin: auto;
         width: 100%;
+        justify-content: center;
     }
     
     .Grid_contenido{
-        display: flex;
-        align-items: center;
+        display: grid;
         justify-content: center;
+    }
+
+    .Grid_02{
+        justify-content: left;
+    }
+
+    .Grid_01{
+        justify-content: right;
     }
     
     .boton_numero{
@@ -230,7 +250,6 @@ body{
         width: 69px;
         border-radius: 50px;
         border: none;
-        margin-top: -90px;
     }
     
     .Grid_parrafo{
